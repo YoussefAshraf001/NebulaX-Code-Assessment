@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add animation for the rotating half-circle */
+@keyframes neonRotation {
+  0% {
+    transform: rotate(0deg);
+    border-top-color: rgb(12, 247, 255); /* Start with blue */
+  }
+  100% {
+    transform: rotate(360deg);
+    border-top-color: rgb(243, 49, 49); /* End with red */
+  }
+}
+
+.neon-ring {
+  animation: neonRotation 3s infinite linear;
+  position: absolute;
+  border: 2px solid transparent; /* Border should be transparent initially */
+  border-top-color: rgb(250 209 122); /* The initial color for the neon line */
+  border-radius: 50%; /* Keep it circular */
+}
