@@ -28,7 +28,7 @@ const About = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col lg:flex-row items-center lg:justify-center py-[140px] lg:py-10">
       {/* Left side text section */}
-      <div className="flex-1 text-left max-w-xl px-8 lg:px-16">
+      <div className="flex-1 text-left max-w-xl lg:px-16">
         {/* First card with circle alignment */}
         <div className="relative">
           {/* Circle behind the card */}
@@ -36,7 +36,7 @@ const About = () => {
 
           {/* Card with slide-in animation */}
           <div
-            className={`card bg-white shadow-lg rounded-xl p-6 flex items-center relative w-[400px] h-[150px] -top-[20px] left-[45px] transform transition-transform duration-1000 ease-out ${
+            className={`card bg-white shadow-lg rounded-xl p-6 flex items-center relative w-[350px] left-[10px] lg:w-[400px] h-[150px] -top-[20px] lg:left-[45px] transform transition-transform duration-1000 ease-out ${
               inView
                 ? "translate-x-0 opacity-100"
                 : "-translate-x-full opacity-0"
@@ -44,7 +44,7 @@ const About = () => {
           >
             <div className="relative p-2">
               <img
-                src="../../public/About/Person1.jpg"
+                src="/About/Person1.jpg"
                 alt="Person 1"
                 className="w-[100px] h-[100px] object-cover rounded-full"
               />
@@ -67,10 +67,10 @@ const About = () => {
         </div>
 
         {/* Second card */}
-        <div className="relative -top-[-100px]">
-          <div className="absolute -top-[10px] -right-[65px] bg-[#55c888] rounded-full w-[200px] h-[200px]"></div>
+        <div className="relative -top-[-100px] ">
+          <div className="absolute -top-[40px] -right-[15px] lg:-top-[10px] lg:-right-[65px] bg-[#55c888] rounded-full w-[200px] h-[200px]"></div>
           <div
-            className={`card bg-white shadow-lg rounded-xl p-6 flex items-center relative w-[400px] h-[150px] -top-[20px] left-[50px] transform transition-transform duration-1000 ease-out ${
+            className={`card bg-white shadow-lg rounded-xl p-6 flex items-center relative w-[350px] left-[15px] lg:w-[400px] h-[150px] -top-[20px] lg:left-[50px] transform transition-transform duration-1000 ease-out ${
               inView
                 ? "translate-x-0 opacity-100"
                 : "translate-x-full opacity-0"
@@ -88,9 +88,9 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="relative p-2 ml-16">
+            <div className="relative p-2 ml-9">
               <img
-                src="../../public/About/Person2.jpg"
+                src="/About/Person2.jpg"
                 alt="Person 2"
                 className="w-[100px] h-[100px] object-cover rounded-full"
               />
@@ -102,7 +102,7 @@ const About = () => {
 
       {/* Right side product section */}
       <div className="flex-col items-center justify-center gap-16 flex-wrap mt-10 lg:mt-0 ml-14 lg:ml-16 pt-[260px] lg:pt-0 pb-[50px] lg:pb-0">
-        <p className="text-yellow-500 font-semibold text-xl">WHAT WE DO</p>
+        <p className="text-[#f1deae] text-xl">WHAT WE DO</p>
         <h1 className="text-5xl font-bold leading-tight mt-2">
           Increase our <br /> Customers <br /> Sales
         </h1>
@@ -110,10 +110,14 @@ const About = () => {
           Our customers are seeing big results within <br /> the first three
           months
         </p>
-        <button className="mt-6 bg-purple-700 text-white px-8 py-4 rounded-full text-lg flex items-center gap-2 hover:bg-purple-600">
-          <span className="flex-grow">More Details</span>
-          <div className="bg-white p-2 rounded-full">
-            <MdArrowForwardIos className="text-xl text-purple-700" />
+        <button className="mt-6 lg:mt-14 bg-purple-700 text-white px-1 py-1 rounded-full text-lg flex items-center gap-2 hover:bg-purple-600">
+          <span className="text-lg lg:text-xl ml-10 uppercase">
+            More Details
+          </span>
+          <div className="ml-5">
+            <div className="bg-white p-3 rounded-full">
+              <MdArrowForwardIos className="w-6 h-6 text-xl text-purple-700" />
+            </div>
           </div>
         </button>
       </div>

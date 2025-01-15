@@ -29,6 +29,15 @@ module.exports = {
         bacteria:
           "polygon(30% 0%, 60% 10%, 90% 30%, 100% 60%, 80% 90%, 60% 100%, 40% 90%, 20% 60%, 0% 40%, 10% 20%)", // Irregular bacteria-like shape
       },
+      fontFamily: {
+        sans: ["Myriad", "sans-serif"],
+      },
+      fontWeight: {
+        normal: "400", // Default weight
+        semibold: "600", // Semibold weight
+        bold: "700", // Bold weight
+        light: "300", // Light weight
+      },
     },
   },
   plugins: [],

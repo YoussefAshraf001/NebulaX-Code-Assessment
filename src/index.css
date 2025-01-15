@@ -2,15 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Regular weight */
+@font-face {
+  font-family: "Myriad";
+  src: url("/fonts/Myriad-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Bold weight */
+@font-face {
+  font-family: "Myriad";
+  src: url("/fonts/Myriad-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* SemiBold weight */
+@font-face {
+  font-family: "Myriad";
+  src: url("/fonts/Myriad-SemiBold.otf") format("opentype");
+  font-weight: 600; /* Semibold weight is typically 600 */
+  font-style: normal;
+}
+
+/* Light weight */
+@font-face {
+  font-family: "Myriad";
+  src: url("/fonts/Myriad-Light.otf") format("opentype");
+  font-weight: 300; /* Light weight is typically 300 */
+  font-style: normal;
+}
+
+body {
+  font-family: "Myriad", sans-serif;
+}
+
 /* Add animation for the rotating half-circle */
 @keyframes neonRotation {
   0% {
     transform: rotate(0deg);
-    border-top-color: rgb(12, 247, 255); /* Start with blue */
+    border-top-color: rgb(187, 74, 9); /* Start with blue */
   }
   100% {
     transform: rotate(360deg);
-    border-top-color: rgb(243, 49, 49); /* End with red */
+    border-top-color: rgb(189, 0, 0); /* End with red */
   }
 }
 

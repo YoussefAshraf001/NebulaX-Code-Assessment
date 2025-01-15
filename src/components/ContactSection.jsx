@@ -19,7 +19,7 @@ function ContactSection() {
 
   return (
     <div
-      className="min-h-screen flex items-center justify-center pl-10 bg-no-repeat bg-right lg:bg-[url('../Contact/bg.jpg')] lg:bg-cover lg:bg-right"
+      className="min-h-screen flex items-center justify-center mt-[-250px] lg:mt-[0px] p-8 lg:p-0 lg:pl-10 bg-no-repeat bg-right lg:bg-[url('/Contact/bg.jpg')] lg:bg-cover lg:bg-right"
       style={{
         backgroundSize: "65%",
       }}

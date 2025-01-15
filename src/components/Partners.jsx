@@ -1,15 +1,9 @@
-import C1 from "../../public/Partners/c1.png";
-import C2 from "../../public/Partners/c2.png";
-import C3 from "../../public/Partners/c3.png";
-import C4 from "../../public/Partners/c4.png";
-import C5 from "../../public/Partners/c5.png";
-
 function Partners() {
   return (
-    <div className="flex flex-col sm:flex-row sm:justify-center items-center text-center py-[50px] lg:px-[100px]">
+    <div className="flex flex-col lg:flex-row lg:justify-center items-center text-center py-[50px] lg:px-[100px]">
       {/* Text container */}
       <div className="flex-1">
-        <h2 className="text-2xl font-semibold text-gray-400">
+        <h2 className="text-2xl font-semibold text-gray-400 pb-[20px] lg:pb-[0px]">
           Companies we've helped build
         </h2>
       </div>
@@ -17,27 +11,27 @@ function Partners() {
       {/* Images container */}
       <div className="flex sm:flex-row flex-col space-x-4 sm:space-x-4 items-center grayscale">
         <img
-          src={C1}
+          src="/Partners/Runway_2025-01-15T05_46_22.047Z_Upscale_Image_Upscaled_Image_1280_x_1280-removebg-preview.png"
           alt="Partner 1"
           className="w-[160px] h-[100px] object-contain"
         />
         <img
-          src={C2}
+          src="/Partners/C2.png"
           alt="Partner 2"
           className="w-[160px] h-[100px] object-contain"
         />
         <img
-          src={C3}
+          src="/Partners/C3.png"
           alt="Partner 3"
           className="w-[160px] h-[100px] object-contain"
         />
         <img
-          src={C4}
+          src="/Partners/C4.png"
           alt="Partner 4"
           className="w-[160px] h-[100px] object-contain"
         />
         <img
-          src={C5}
+          src="/Partners/C5.png"
           alt="Partner 5"
           className="w-[160px] h-[100px] object-contain mb-2"
         />
