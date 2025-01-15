@@ -2,10 +2,10 @@ Sure! Here's an updated version of your **README** with more icons to give it a 
 
 ---
 
-#  
-![Nebula X Logo](https://assets.static-upwork.com/org-logo/1832536251099666863)  
-Nebula X - Your Cosmic Programming Partner - Code Assessment - Growing Online Businesses Landing Page
-
+<h1 align="center">
+  ![Nebula X Logo](https://assets.static-upwork.com/org-logo/1832536251099666863)  
+  Nebula X - Your Cosmic Programming Partner - Code Assessment - Growing Online Businesses Landing Page
+</h1>
 
 This project is a **code assessment** where I have built a **landing page** inspired by the design shared in the [Dribbble shot](https://dribbble.com/shots/9776995-Growing-Online-Businesses-Landing-Page/attachments/1807767?mode=media). The landing page is aimed at showcasing a modern, responsive design for online business services.
 
