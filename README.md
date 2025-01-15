@@ -3,7 +3,6 @@ Sure! Here's an updated version of your **README** with more icons to give it a 
 ---
 
 <h1 align="center">
-  <img src="https://assets.static-upwork.com/org-logo/1832536251099666863" alt="Nebula X Logo" width="200"/>  
   Nebula X - Code Assessment - Growing Online Businesses Landing Page
 </h1>
 
