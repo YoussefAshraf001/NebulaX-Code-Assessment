@@ -2,7 +2,7 @@ Sure! Here's an updated version of your **README** with more icons to give it a 
 
 ---
 
-# 🌱 Nebula X Code Assessment - Growing Online Businesses Landing Page
+# ![Logo](./public/logo.jpg) Nebula X Code Assessment - Growing Online Businesses Landing Page
 
 This project is a **code assessment** where I have built a **landing page** inspired by the design shared in the [Dribbble shot](https://dribbble.com/shots/9776995-Growing-Online-Businesses-Landing-Page/attachments/1807767?mode=media). The landing page is aimed at showcasing a modern, responsive design for online business services.
 
