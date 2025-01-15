@@ -49,7 +49,7 @@ function App() {
 
       {/* Navbar */}
       <nav
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 w-[377px] md:w-[800px] lg:w-full z-50 transition-all duration-300 ${
           scrolling ? "bg-white shadow-md" : "bg-transparent"
         }`}
       >
@@ -60,8 +60,8 @@ function App() {
           </div>
 
           {/* Navbar Buttons */}
-          <div className="flex space-x-6 text-black">
-            <button className="px-6 py-2 underline hover:text-blue-500 transition-all duration-300">
+          <div className="flex lg:space-x-6 text-black">
+            <button className="md:px-6 py-2 underline hover:text-blue-500 transition-all duration-300">
               Get Started Now
             </button>
             <button className="bg-gray-200 bg-opacity-50 py-1 px-5 rounded-full hover:text-blue-500 hover:bg-opacity-100 transition-all duration-300">
