@@ -60,7 +60,7 @@ function App() {
           </div>
 
           {/* Navbar Buttons */}
-          <div className="flex lg:space-x-6 text-black">
+          <div className="flex space-x-4 md:space-x-6 text-black">
             <button className="md:px-6 py-2 underline hover:text-blue-500 transition-all duration-300">
               Get Started Now
             </button>

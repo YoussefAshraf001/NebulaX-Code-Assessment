@@ -5,7 +5,7 @@ import { IoMdArrowDropupCircle } from "react-icons/io";
 const About = () => {
   const [inView, setInView] = useState(false);
 
-  // Detect when the cards are in view with a delay
+  // Detect when the cards are in view with no delay
   useEffect(() => {
     const handleScroll = () => {
       const cards = document.querySelectorAll(".card");
@@ -13,8 +13,7 @@ const About = () => {
         const rect = card.getBoundingClientRect();
         // Trigger animation when the cards are 50% in the viewport or further
         if (rect.top <= window.innerHeight * 0.75 && rect.bottom >= 0) {
-          // Add a delay before activating the animation
-          setTimeout(() => setInView(true), 300); // 300ms delay before animation starts
+          setInView(true); // Remove the timeout for instant animation trigger
         }
       });
     };
@@ -34,12 +33,12 @@ const About = () => {
           {/* Circle behind the card */}
           <div className="absolute -top-[70px] -left-[65px] bg-[#4ab7d5] rounded-full w-[250px] h-[250px]"></div>
 
-          {/* Card with slide-in animation */}
+          {/* Card with slide-in-up animation */}
           <div
             className={`card bg-white shadow-lg rounded-xl p-6 flex items-center relative w-[350px] left-[10px] lg:w-[400px] h-[150px] -top-[20px] lg:left-[45px] transform transition-transform duration-1000 ease-out ${
               inView
-                ? "translate-x-0 opacity-100"
-                : "-translate-x-full opacity-0"
+                ? "translate-y-0 opacity-100"
+                : "translate-y-full opacity-0"
             }`}
           >
             <div className="relative p-2">
@@ -72,8 +71,8 @@ const About = () => {
           <div
             className={`card bg-white shadow-lg rounded-xl p-6 flex items-center relative w-[350px] left-[15px] lg:w-[400px] h-[150px] -top-[20px] lg:left-[50px] transform transition-transform duration-1000 ease-out ${
               inView
-                ? "translate-x-0 opacity-100"
-                : "translate-x-full opacity-0"
+                ? "translate-y-0 opacity-100"
+                : "-translate-y-full opacity-0" // This will make the second card slide down
             }`}
           >
             <div className="mr-6 pt-2 flex flex-col h-full gap-4">
